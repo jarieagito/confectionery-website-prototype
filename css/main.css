@@ -129,10 +129,18 @@ p {
   padding: 1em;
 }
 
+.section-body:hover {
+  background-color: #c78d38;
+}
+
 .banner {
   position: relative;
   border-top: 5px solid #c78d38;
   padding-top: 1em;
+}
+
+strong {
+  font-style: italic;
 }
 
 h4 {
@@ -163,6 +171,14 @@ h4 {
   left: 50%;
   background-color: rgba(239, 222, 203, .76);
   border-radius: 10px;
+}
+
+.text:hover {
+  background-color: #c78d38;
+}
+
+blockquote {
+  margin: 0;
 }
 
 .footer {
