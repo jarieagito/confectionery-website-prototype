@@ -40,8 +40,6 @@ img {
 
 section {
   display: flex;
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
 }
 
 header {
@@ -53,8 +51,8 @@ header {
 h1 {
   margin: 0 0 .5rem;
   font-size: 3rem;
-  font-family: "Lobster", cursive;
-  color: #e32020;
+  font-family: Lobster, sans-serif;
+  color: #c99544;
 }
 
 nav ul {
@@ -75,25 +73,32 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #e39702;
+  background-color: #c78d38;
   color: #fff;
+  border-radius: 5px;
 }
 
 .boxes {
-  width: 25%;
   padding: 1.5em;
-  background-color: #faeac0;
-  border: 1px solid #aaa;
-  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #c78d38;
 }
 
 .boxes:hover {
-  background-color: #fcf6ca;
+  background-color: #c78d38;
+}
+
+.boxes:nth-child(1) {
+  display: none;
+}
+
+.boxes:nth-child(4) {
+  display: none;
 }
 
 h2 {
   text-align: center;
-  font-family: 'Calistoga', cursive;
+  font-family: Calistoga, sans-serif;
 }
 
 .banner {
@@ -104,19 +109,15 @@ h2 {
   text-align: center;
   bottom: 10%;
   left: 50%;
-  background-color: #fcf6ca;
+  background-color: rgba(239, 222, 203, .76);
   border-radius: 10px;
   padding: 1rem;
-
 }
 
 h3 {
-  font-family: 'Calistoga', cursive;
-  font-size: 2em;
-  line-height: 1.2;
-  margin-bottom: .2em;
-  margin-top: 0;
-  max-width: 70%;
+  font-family: Calistoga, sans-serif;
+  font-size: 1em;
+  margin: 1rem;
 }
 
 p {
@@ -126,7 +127,6 @@ p {
 .img-second {
   width: 400px;
   padding: 1.2rem;
-
 }
 
 .everything {
@@ -149,6 +149,7 @@ p {
 .section-icon {
   width: 33%;
   order: 3;
+  margin: 0;
 }
 
 .section-letter {
@@ -161,17 +162,79 @@ p {
 }
 
 h4 {
-  font-family: 'Calistoga', cursive;
-  font-size: 2rem;
-  margin: 1rem;
+  font-family: Calistoga, sans-serif;
+  font-size: 2em;
+  line-height: 1.2;
+  margin-bottom: .2em;
+  margin-top: 0;
+  max-width: 70%;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.5rem 0;
+  background-color: #e3ac5b;
+  border-top: 3px solid #c78d38;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #c78d38;
+  color: #fff;
+}
+
+.footer h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer ul {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer a {
+  color: #003442;
+}
+
+.links {
+  padding: 0 1rem;
+}
+
+.social {
+  margin-left: auto;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.social > li {
+  margin: 0 .5em;
+  width: 3em;
+}
+
+.copyright {
+  padding: 0 1rem;
+  width: 100%;
+}
 
 @media only screen and (min-width: 25em) {
 
   nav li {
     display: inline-block;
     text-align: center;
+  }
+
+  .boxes:nth-child(1) {
+    display: flex;
+  }
+
+  .boxes:nth-child(4) {
+    display: flex;
   }
 
 }
