@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .square {
-  width: 100px;
+  width: 130px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -130,7 +130,7 @@ p {
 }
 
 .section-body:hover {
-  background-color: #c78d38;
+  background-color: #fff;
 }
 
 .banner {
@@ -171,6 +171,7 @@ h4 {
   left: 50%;
   background-color: rgba(239, 222, 203, .76);
   border-radius: 10px;
+  font-size: 1em;
 }
 
 .text:hover {
@@ -243,13 +244,16 @@ blockquote {
     width: 100%;
   }
 
-  .boxes:nth-child(4) {
-    display: block;
-    width: 100%;
+  .square {
+    width: 130px;
   }
 
   .img-second {
     width: 350px;
+  }
+
+  .section-body:hover {
+    background-color: #c78d38;
   }
 
 }
@@ -273,6 +277,11 @@ blockquote {
 
   .section-body {
     width: 33%;
+  }
+
+  .boxes:nth-child(4) {
+    display: block;
+    width: 100%;
   }
 
 }
@@ -319,12 +328,30 @@ blockquote {
     border-radius: 10px;
   }
 
+  .square {
+    width: 160%;
+    margin: auto;
+    align-items: center;
+  }
+
+  .bon {
+    width: 140%;
+  }
+
+  .text {
+    font-size: 2em;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
+  }
+
+  .bon {
+    width: 195%;
   }
 
 }
