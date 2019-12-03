@@ -31,13 +31,6 @@ img {
   width: 100%;
 }
 
-.square {
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
-
 section {
   display: flex;
 }
@@ -81,8 +74,15 @@ nav a:hover {
 .boxes {
   padding: 1em;
   background-color: #fff;
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid #c78d38;
   width: 100%;
+}
+
+.square {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 .boxes:hover {
@@ -102,13 +102,9 @@ h2 {
   font-family: Calistoga, sans-serif;
 }
 
-.banner {
-  position: relative;
-}
-
 h3 {
   font-family: Calistoga, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   margin: 1rem;
 }
 
@@ -125,10 +121,8 @@ p {
   margin: 0 auto;
 }
 
-.section-icon {
+.section-store {
   order: 3;
-  padding-bottom: 1em;
-  border-bottom: 5px solid #000;
 }
 
 .section-body {
@@ -136,13 +130,19 @@ p {
   padding: 1em;
 }
 
+.banner {
+  position: relative;
+  border-top: 5px solid #c78d38;
+  padding-top: 1em;
+}
+
 h4 {
   font-family: Calistoga, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.2;
   margin-bottom: .2em;
   margin-top: 0;
-  max-width: 70%;
+  text-align: center;
 }
 
 .everything {
@@ -150,7 +150,7 @@ h4 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .img-second {
@@ -224,11 +224,17 @@ h4 {
   }
 
   .boxes:nth-child(1) {
-    display: flex;
+    display: block;
+    width: 100%;
   }
 
   .boxes:nth-child(4) {
-    display: flex;
+    display: block;
+    width: 100%;
+  }
+
+  .img-second {
+    width: 350px;
   }
 
 }
@@ -240,10 +246,18 @@ h4 {
     line-height: 1.4;
   }
 
-  .section-icon {
+  .section-store {
     width: 33%;
     order: 3;
     margin: 0;
+  }
+
+  .section-variety {
+    width: 33%;
+  }
+
+  .section-body {
+    width: 33%;
   }
 
 }
