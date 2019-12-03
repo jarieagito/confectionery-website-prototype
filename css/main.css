@@ -117,7 +117,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 45em;
   margin: 0 auto;
 }
 
@@ -284,6 +283,24 @@ h4 {
   h1 {
     margin-bottom: 0;
     margin-right: 1.5rem;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .section-variety {
+    width: 50%;
+  }
+
+  .section-store {
+    width: 50%;
+  }
+
+  .section-body {
+    position: absolute;
+    background-color: rgba(239, 222, 203, .76);
+    border-radius: 10px;
   }
 
 }
